@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Domácí úkol – Moje fotogalerie zvířat</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header>
+  <span class="header-emoji">🐾</span>
+  <h1>Domácí úkol:<br>Moje fotogalerie zvířat</h1>
+  <p class="subtitle">Procvičení práce se složkami, soubory a okny</p>
+</header>
+
+<main>
+
+  <!-- Zadání -->
+  <div class="card">
+    <h2><span class="step-num">1</span>Připrav si pracovní složku</h2>
+    <p>Na <strong>Ploše</strong> vytvoř složku s názvem:</p>
+    <p style="margin-top:12px; font-size:20px;"><code>Moje_fotogalerie</code></p>
+  </div>
+
+  <div class="card">
+    <h2><span class="step-num">2</span>Vytvoř podsložky</h2>
+    <p>Uvnitř složky <code>Moje_fotogalerie</code> vytvoř tyto 4 složky:</p>
+    <div class="folder-tree">
+      <div class="folder">📁 Moje_fotogalerie</div>
+      <div class="sub">📁 Psi</div>
+      <div class="sub">📁 Kočky</div>
+      <div class="sub">📁 Ptáci</div>
+      <div class="sub">📁 Ostatní</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2><span class="step-num">3</span>Vytvoř podsložky pro plemena</h2>
+    <p>Uvnitř složky <code>Psi</code> vytvoř další 3 složky podle plemene:</p>
+    <div class="folder-tree">
+      <div class="folder">📁 Psi</div>
+      <div class="sub">📁 Husky</div>
+      <div class="sub">📁 Pudl</div>
+      <div class="sub">📁 Dalmatin</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2><span class="step-num">4</span>Stáhni fotografie z internetu</h2>
+    <p>Vyhledej obrázky na internetu a každý ulož přes <strong>pravé tlačítko → Uložit obrázek jako...</strong></p>
+    <p style="margin: 12px 0 16px; font-weight: 700; color: var(--green-dark);">Stažené fotky najdeš ve složce 📁 Stažené soubory</p>
+
+    <table class="photo-table">
+      <thead>
+        <tr>
+          <th>Co hledat</th>
+          <th>Kolik fotek</th>
+          <th>Jak pojmenovat</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Co hledat">Husky</td>
+          <td data-label="Kolik fotek">3</td>
+          <td data-label="Jak pojmenovat"><code>husky_1</code>, <code>husky_2</code>, <code>husky_3</code></td>
+        </tr>
+        <tr>
+          <td data-label="Co hledat">Pudl</td>
+          <td data-label="Kolik fotek">3</td>
+          <td data-label="Jak pojmenovat"><code>pudl_1</code>, <code>pudl_2</code>, <code>pudl_3</code></td>
+        </tr>
+        <tr>
+          <td data-label="Co hledat">dalmatin</td>
+          <td data-label="Kolik fotek">3</td>
+          <td data-label="Jak pojmenovat"><code>dalmatin_1</code>, <code>dalmatin_2</code>, <code>dalmatin_3</code></td>
+        </tr>
+        <tr>
+          <td data-label="Co hledat">Kočka</td>
+          <td data-label="Kolik fotek">2</td>
+          <td data-label="Jak pojmenovat"><code>kocka_1</code>, <code>kocka_2</code></td>
+        </tr>
+        <tr>
+          <td data-label="Co hledat">Pták</td>
+          <td data-label="Kolik fotek">2</td>
+          <td data-label="Jak pojmenovat"><code>ptak_1</code>, <code>ptak_2</code></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <h2><span class="step-num">5</span>Roztřiď fotky do složek</h2>
+    <p>Přesuň každou staženou fotku do správné složky:</p>
+    <div class="folder-tree" style="margin-top:16px;">
+      <div class="folder">📁 Moje_fotogalerie</div>
+      <div class="sub">📁 Psi</div>
+      <div class="subsub">📁 Husky → husky_1, husky_2, husky_3</div>
+      <div class="subsub">📁 Pudl → pudl_1, pudl_2, pudl_3</div>
+      <div class="subsub">📁 Dalmatin → dalmatin_1, dalmatin_2, dalmatin_3</div>
+      <div class="sub">📁 Kočky → kocka_1, kocka_2</div>
+      <div class="sub">📁 Ptáci → ptak_1, ptak_2</div>
+      <div class="sub">📁 Ostatni → (zatím prázdná)</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2><span class="step-num">6</span>Zkontroluj výsledek</h2>
+    <p>Otevři složku <code>Moje_fotogalerie</code> a ověř:</p>
+    <ul class="checklist" style="margin-top:14px;">
+      <li>Ve složce Stažené soubry už nezůstala žádná fotka</li>
+      <li>Každá složka obsahuje správné fotky</li>
+      <li>Všechny soubory mají správné názvy</li>
+      <li>Složky psů jsou správně rozdělené podle plemene</li>
+    </ul>
+  </div>
+
+  <!-- BONUS -->
+  <div class="card bonus">
+    <h2><span class="step-num">⭐</span>Bonus pro šikovnější</h2>
+    <p>Ve složce <code>Ostatni</code> vytvoř podsložku:</p>
+    <p style="margin: 10px 0;"><code>Zvireci_zajimavosti</code></p>
+    <p>Stáhni do ní 2 fotky libovolného zvířete, které tě zaujme, a pojmenuj je:</p>
+    <p style="margin-top:10px;"><code>zajimavost_1</code> a <code>zajimavost_2</code></p>
+  </div>
+
+  <!-- CO PROCVIČÍŠ -->
+  <div class="card skills">
+    <h2>📚 Co tímto úkolem procvičíš</h2>
+    <div class="skills-grid">
+      <div class="skill-pill">📁 Vytváření složek a podsložek</div>
+      <div class="skill-pill">⬇️ Stahování souborů z internetu</div>
+      <div class="skill-pill">✏️ Přejmenování souborů</div>
+      <div class="skill-pill">↔️ Přesouvání souborů</div>
+      <div class="skill-pill">🪟 Práce s více okny</div>
+      <div class="skill-pill">🗂️ Udržování pořádku v souborech</div>
+    </div>
+  </div>
+
+  <!-- TIP -->
+  <div class="tip-box">
+    💡 <strong>Tip:</strong> Při přesouvání fotek si otevři vedle sebe prohlížeč i průzkumník souborů a přepínaj mezi nimi pomocí <strong>Alt + Tab</strong> — procvičíš tím přepínání oken!
+  </div>
+
+</main>
+
+<footer>
+  Základy práce na PC &nbsp;·&nbsp; Domácí úkol
+</footer>
+
+</body>
+</html>
