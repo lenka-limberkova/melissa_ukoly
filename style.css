@@ -604,6 +604,115 @@ footer {
 }
 
 /* =============================================
+   UKOL 3 – DEMO DOKUMENT A FORMÁTOVÁNÍ
+   ============================================= */
+
+.demo-doc {
+  background: #fff;
+  border: 1.5px solid var(--green-accent);
+  border-radius: 12px;
+  padding: 28px 32px;
+  margin: 18px 0;
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--text-dark);
+  box-shadow: 0 2px 10px rgba(26,74,46,0.07);
+}
+
+.demo-doc .doc-title {
+  font-size: 22px;
+  font-weight: 800;
+  text-align: center;
+  color: var(--green-dark);
+  margin-bottom: 14px;
+  font-family: 'Playfair Display', serif;
+}
+
+.demo-doc .doc-subtitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--green-mid);
+  margin: 14px 0 6px;
+}
+
+.demo-doc p { margin-bottom: 10px; }
+
+.fmt {
+  display: inline-block;
+  background: var(--green-pale);
+  border: 1.5px solid var(--green-accent);
+  border-radius: 6px;
+  padding: 1px 8px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--green-dark);
+  font-family: 'Courier New', monospace;
+  margin: 0 2px;
+}
+
+.u-single { text-decoration: underline; }
+.u-double { text-decoration: underline; text-decoration-style: double; }
+.u-wavy   { text-decoration: underline; text-decoration-style: wavy; text-decoration-color: #e57373; }
+.u-dotted { text-decoration: underline; text-decoration-style: dotted; }
+
+.underline-demos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin: 14px 0;
+}
+
+.underline-demo-item {
+  background: var(--green-pale);
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-dark);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.underline-demo-item .label {
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--green-mid);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.align-demos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  margin: 14px 0;
+}
+
+.align-demo-item {
+  background: var(--green-pale);
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-size: 14px;
+  color: var(--text-dark);
+}
+
+.align-demo-item .label {
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--green-mid);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+  display: block;
+  text-align: left;
+}
+
+.align-demo-item .text-left   { text-align: left; }
+.align-demo-item .text-center { text-align: center; }
+.align-demo-item .text-right  { text-align: right; }
+
+/* =============================================
    RESPONSIVE
    ============================================= */
 
@@ -640,4 +749,8 @@ footer {
   .ukol-card { padding: 22px 18px; }
   .ukol-card .card-top { flex-direction: column; gap: 8px; }
   .tags { gap: 6px; }
+
+  .demo-doc { padding: 18px 16px; }
+  .align-demos { grid-template-columns: 1fr; }
+  .underline-demos { flex-direction: column; gap: 8px; }
 }

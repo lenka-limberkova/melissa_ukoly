@@ -5,10 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Základy práce na PC – Domácí úkoly</title>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css">
-
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="hub">
 
 <header>
   <span class="header-emoji">💻</span>
@@ -20,16 +19,35 @@
 
   <p class="section-label">Všechny úkoly</p>
 
-  
+  <!-- ÚKOL 3 – aktivní -->
+  <a class="ukol-card active-card" href="ukol3/index.html">
+    <div class="card-top">
+      <div>
+        <div class="card-num">Úkol 3</div>
+        <h2>✍️ Průvodce mým oblíbeným místem</h2>
+      </div>
+      <span class="badge active">▶ Aktuální úkol</span>
+    </div>
+    <p>Formátování textu v LibreOffice Writer — nadpis, odstavce, seznamy, tučné, kurzíva, podtržení, barvy, zarovnání a vložení obrázku.</p>
+    <div class="tags">
+      <span class="tag">🔤 Písmo a velikost</span>
+      <span class="tag"><strong>B</strong> Formátování</span>
+      <span class="tag">🎨 Barvy textu</span>
+      <span class="tag">↔️ Zarovnání</span>
+      <span class="tag">🖼️ Obrázek</span>
+      <span class="tag">• Seznamy</span>
+    </div>
+    <span class="cta">Otevřít úkol →</span>
+  </a>
 
-  <!-- ÚKOL 2 – aktivní -->
-  <a class="ukol-card active-card" href="ukol2/index.html">
+  <!-- ÚKOL 2 – hotový -->
+  <a class="ukol-card done-card" href="ukol2/index.html">
     <div class="card-top">
       <div>
         <div class="card-num">Úkol 2</div>
         <h2>🐶 Deník mého psa</h2>
       </div>
-      <span class="badge active">▶ Aktuální úkol</span>
+      <span class="badge done">✓ Splněno</span>
     </div>
     <p>Kopírování a vkládání textu, označování, úprava textu v Poznámkovém bloku, třídění souborů a odeslání emailu s přílohou.</p>
     <div class="tags">
@@ -39,7 +57,7 @@
       <span class="tag">📧 Email s přílohou</span>
       <span class="tag">📁 Složky</span>
     </div>
-    <span class="cta">Otevřít úkol →</span>
+    <span class="cta secondary">Zobrazit úkol →</span>
   </a>
 
   <!-- ÚKOL 1 – hotový -->
